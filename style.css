@@ -4,12 +4,12 @@
     margin: 0;
     box-sizing: border-box;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -26,17 +26,21 @@ header h4{
 }
 
 .background {
-    box-shadow: 0 0 0 100vmax #1F2937;
-    clip-path: inset(0 -100vmax); 
+    background: url(images/martin-jernberg-oBX-b6ltYts-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+    bottom: 100px;
+    background-position: 0 0;
 }
 
 .header ul {
     cursor: pointer;
     list-style-type: none;
-    font: 13px;
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
+}
+li:hover {
+    color: #1F9CF0;
 }
 
 .title-section {
@@ -60,30 +64,53 @@ header h4{
 }
 
 button {
+    background-color: #1F9CF0;
+    color: #F9FAF8;
     width: 80px;
-    padding: 5px
+    height: 36px;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
 }
 
-/* informations section */
+button:hover {
+    color: #1F9CF0;
+    background-color: #F9FAF8;
+}
+
+/* information section */
 
 #information {
-    background-color: #c2c8ce;
+    background-color: #CACBD0;
+    color: #F9FAF8;
+    padding: 3rem;
 }
 
 #boxes {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 500px;
+    height: 450px;
+    margin-top: -50px;
 }
 
 .box {
     margin: auto;
-    border: 2px solid gold;
     height: 220px;
     width: 190px;
 }
 
+.box img {
+    width: 190px;
+}
+
+.box img:hover{
+    margin-top: -10px;
+}
+
+/* quote section */
 .quotes {
     background-color: #F9FAF8;
     color: #1F2937;
@@ -103,6 +130,29 @@ button {
 
  #quotes h4 {
     text-align:right;
+    font-weight: 400;
+    font-style: italic;
+ }
+
+ /* action section */
+ #action {
+    height: 270px;
+    padding-top: 5rem;
+ }
+
+ .card {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+    gap: 3rem;
+    background-color: #1F9CF0;
+    border-radius: 20px;
+ }
+
+ #action button {
+    border: 2px solid #F9FAF8;
  }
 
  /* footer */
